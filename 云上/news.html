@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				height: 100vh;
+				margin: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-image: url('img/p1.PNG');
+				background-size: cover;
+				transition: background 0.5s ease;
+			}
+
+
+			 .back-to-home {
+			            position: fixed;
+			            bottom: 20px;
+			            right: 20px;
+			            padding: 10px;
+			            background-color: #4CAF50;
+			            color: white;
+			            text-decoration: none;
+			            font-weight: bold;
+			            border-radius: 4px;
+						 width: 100px;
+						    height: 36px;
+			            z-index: 9999;
+						font-size: 22px;
+						    text-align: center;
+						}
+		</style>
+	</head>
+	<body>
+
+<a href="main.html" class="back-to-home">返回首页</a>
+		<script>
+			const body = document.body;
+			const images = ['img/p1.PNG','img/p2.PNG','img/p3.PNG','img/p4.PNG','img/p5.PNG',]; // 更换的背景图片列表
+			let currentImageIndex = 0;
+
+			// 点击页面任意位置时切换背景图片
+			body.addEventListener('click', function() {
+				currentImageIndex = (currentImageIndex + 1) % images.length;
+				const imageUrl = images[currentImageIndex];
+				body.style.backgroundImage = `url('${imageUrl}')`;
+			});
+		</script>
+	</body>
+</html>

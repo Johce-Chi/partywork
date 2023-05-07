@@ -1,0 +1,173 @@
+body {
+	background-image: url('../img/2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/*导航栏*/
+*{
+ 	padding:0px;
+ 	margin:0px;
+ 	border:0px;
+ }
+.navbar {
+	overflow: hidden;
+	font-size: 25px;
+	background-color: #386690;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: #C6C6C6;
+	color: black;
+}
+
+.active {
+	background-color: #CEA06C;
+	color: white;
+}
+
+/*头像框*/
+
+.avatar-menu {
+  position: absolute;
+  
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.imenu {
+  display: none;
+  position: absolute;
+background-color: white;
+  min-width: 160px;
+  top: 60px;
+  right:20px;
+  border-radius: 10px;
+   z-index: 999;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 2);
+    
+}
+
+.imenu a {
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+}
+
+.imenu a:hover {
+  background-color: #C6C6C6;
+  
+}
+
+.avatar-menu:hover .imenu {
+  display: block;
+}
+/*您好请登录文字*/
+.log-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*01*/
+.image1-link {
+  display: inline-block;
+  position: fixed;
+  top: 280px;
+  right: 450px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 2);
+  border: 3px solid white;
+}
+
+.image1-link img {
+  display: block;
+ width: 300px; /* 设置图片宽度为 200 像素 */
+   height: 220px; /* 保持高度自适应 */
+  border-radius: 10px;
+}
+/*02*/
+.image2-link {
+  display: inline-block;
+  position: fixed;
+  top: 280px;
+  right: 70px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 2);
+  border: 3px solid white;
+}
+
+.image2-link img {
+  display: block;
+ width: 300px; /* 设置图片宽度为 200 像素 */
+   height: 220px; /* 保持高度自适应 */
+  border-radius: 10px;
+}
+/*03*/
+.image3-link {
+  display: inline-block;
+  position: fixed;
+  top: 570px;
+  right: 450px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 2);
+  border: 3px solid white;
+}
+
+.image3-link img {
+  display: block;
+ width: 300px; /* 设置图片宽度为 200 像素 */
+   height: 220px; /* 保持高度自适应 */
+  border-radius: 10px;
+}
+
+/*04*/
+.image4-link {
+  display: inline-block;
+  position: fixed;
+  top: 570px;
+  right: 70px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 2);
+  border: 3px solid white;
+}
+
+.image4-link img {
+  display: block;
+ width: 300px; /* 设置图片宽度为 200 像素 */
+   height: 220px; /* 保持高度自适应 */
+  border-radius: 10px;
+}
+

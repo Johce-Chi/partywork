@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="./css/pagemain.css">
+		<link rel="stylesheet" type="text/css" href="./css/pageheader.css">
+		<link rel="stylesheet" type="text/css" href="./css/pagecontent.css">
+		<link rel="stylesheet" type="text/css" href="./css/pagefoot.css">
+		<style>
+			.back-to-home {
+			           position: fixed;
+			           bottom: 20px;
+			           right: 20px;
+			           padding: 10px;
+			           background-color: #4CAF50;
+			           color: white;
+			           text-decoration: none;
+			           font-weight: bold;
+			           border-radius: 4px;
+									 width: 100px;
+									    height: 36px;
+			           z-index: 9999;
+									font-size: 22px;
+									    text-align: center;
+									}
+		</style>
+	</head>
+	<body>
+		<div  class='header'>
+			<div class="directer">
+				<ul>
+						<li id="leftli"><a href='main.html'>首页</a></li>
+						<li id="leftli"><a href='main.html'>位置</a></li>
+						<li id="rightli"><a href='main.html'>无障碍</a></li>
+						<li id="rightli"><a href='main.html'>手机京东</a></li>
+						<li id="rightli"><a href='main.html'>网站导航</a></li>
+						<li id="rightli"><a href='Userfeedback.html'>客户服务</a></li>
+						<li id="rightli"><a href='main.html'>企业采购</a></li>
+						<li id="rightli"><a href='main.html'>我的京东</a></li>
+						<li id="rightli"><a href='shoppingcart.html'>我的订单</a></li>
+						<li id="rightli"><a href='main.html'>免费注册</a></li>
+						<li id="rightli"><a href='main.html#'>你好，请登录</a></li>
+				</ul>
+			</div>
+			<div class="second">
+				<a href="#" ><img src="./img/logo.jpg" id="logo"></a>
+				<div class="menu">	
+				<button type="button"class="dropbtn menu">全部分类</button>
+					<div class="imenu">
+								<a href="#">新鲜水果</a>
+								<a href="#">海鲜水产</a>
+								<a href="#">精选肉类</a>
+								<a href="#">冷饮酒食</a>
+								<a href="#">蔬菜蛋品</a>
+					</div>	
+				</div>
+				<input type="text"class="textbox" placeholder="搜索...">
+				<button type="button" class="dropbtn mycounter">我的购物车</button>
+				 <div>
+					<button type="button" class="dropbtn QRcode" onclick="displaycode()">扫码享优惠</button>
+					<img src="img/114514.png" class="discode" id="sbcode">
+				</div>
+			</div>
+			<div class="shop">
+			        <div class="shop-logo-box" >
+			            <a href="#" class="shop-logo-link" target="_blank">
+			            <img src="img/logo.jpg" class="shop-logo"></a>
+			            <p class="shop-name">中国特产·IKUN农产馆</p>
+			            <a href="#" class="follow-me for-light-bg" id="shop-signs-attention">关注我</a>
+			        </div>
+			</div>
+		</div>
+
+		<div class='content'>
+			<div class="title">
+				<P>ikun 坤制品 1kg/份 鲜美 出口级 香翅捞饭坤 不晚耕坤 清真食品</P>
+				
+			</div>
+			<div class="tip">
+				<P class="tips">京东价</P>
+				<P class="tips">￥ <span style="font-size: 25px; color: #E43934;" >100坤</span></P>
+				<a href=""class="tips">降价通知</a>
+				<div class="comment">
+					<p  id="upcomment">累计评价</p>
+					<a href="#" id="dwcomment">2.5万+</a>
+				</div>
+			</div>
+			<div>
+				<label class="deliver">配送至</label>
+				
+				
+				  <script language="javascript" src="./js/province.js" type="text/javascript" charset="utf-8"></script>
+				  <body onload='getProvince()'>
+				  	<select id="province" onchange="chooseProvince(this)">
+				  		<option value="1">四川省</option>
+				  	</select>
+				  	<select id="city" onchange="chooseCity(this)">
+				  		<option value="2">甘孜藏族自治区</option>
+				  	</select>
+				  	<select id="area">
+				  		<option value="3">理塘县</option>
+				  	</select>
+
+
+				<label class="deliver">有货 支持</label>
+				<a href="#" class="deliver" id="fengexian">包邮</a>
+				<a href="#" class="deliver" id="fengexian">30天价保</a>
+				<a href="#" class="deliver">足斤足两</a>
+			</div>
+			<div class="support">
+				<label style="font-size: 25px; color: #E43934; margin-left: 8px;margin-right: 8px;">放心购</label>
+				<a href="#">足够两年半</a>
+				<a href="#">优鲜赔</a>
+			</div>
+			<div class="option">
+				<table>
+				<tr>
+					<td><button class="goodselect" onclick="displaygoods(1)">爆炸坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(2)">坤蛋</button></td>
+					<td><button class="goodselect" onclick="displaygoods(3)">星空坤</button></td>
+					<td><button class="goodselect"  onclick="displaygoods(4)">纸板坤</button></td>
+				</tr>
+				<tr>
+					<td><button class="goodselect"  onclick="displaygoods(5)">Dio坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(6)">窖养坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(7)">油饼坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(8)">香翅捞饭坤</button></td>
+				</tr>
+				<tr>	
+					<td><button class="goodselect" onclick="displaygoods(9)">乌鱼坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(10)">不晚耕坤</button></td>
+					<td><button class="goodselect" onclick="displaygoods(11)">你干妈坤</button></td>
+				</tr>
+				</table>
+			</div>
+			<div class="shopcurt">
+				<label for="quantity">数量：</label>
+				<input type="number" id="quantity" name="quantity" min="1" max="10" value="1" class="quantity-input">
+
+				<a href="#" class="initCartUrl" >加入购物车</a>
+			</div>
+		</div>	
+		<div class='left'>
+			<div class="theimg">
+				<img src="img/goods/0.jpg"  class="goodssample" id="sampleimg">
+				<img src="img/goods/1.gif"  class="goodsimg" id="goodsimg1">
+				<img src="img/goods/2.jpeg" class="goodsimg" id="goodsimg2">
+				<img src="img/goods/3.jpeg" class="goodsimg" id="goodsimg3">
+				<img src="img/goods/4.jpeg" class="goodsimg" id="goodsimg4">
+				<img src="img/goods/5.jpeg" class="goodsimg" id="goodsimg5">
+				<img src="img/goods/6.jpeg" class="goodsimg" id="goodsimg6">
+				<img src="img/goods/7.jpeg" class="goodsimg" id="goodsimg7">
+				<img src="img/goods/8.jpeg" class="goodsimg" id="goodsimg8">
+				<img src="img/goods/9.jpeg" class="goodsimg" id="goodsimg9">
+				<img src="img/goods/10.jpeg" class="goodsimg" id="goodsimg10">
+				<img src="img/goods/11.jpeg" class="goodsimg" id="goodsimg11">
+				<button class="arrow" id="left" onclick="last()">&lt;</button>
+				<button class="arrow" id="right" onclick="next()">&gt;</button>
+				</div>
+		</div>
+			<div class='right'>
+				<P>猜你想看</P>
+				<ul>
+					<li><a href="#"><img src="img/goods/3.jpeg" alt="" class="guessuwant"></a><span class="guessuwant-price">￥99坤</span></li>
+					<li><a href="#"><img src="img/goods/4.jpeg" alt=""class="guessuwant"></a><span class="guessuwant-price">￥99坤</span></li>
+					<li><a href="#"><img src="img/goods/5.jpeg" alt=""class="guessuwant"></a><span class="guessuwant-price">￥99坤</span></li>
+				</ul>
+				</div>
+		
+		<div class='foot'>
+			<div class="director-bottom">
+				<a href="#" class="director-bottom-select">商品介绍</a>
+				<a href="#" class="director-bottom-select">规格与包装</a>
+				<a href="#" class="director-bottom-select"`>售后保障</a>
+				<a href="#" class="director-bottom-select">商品评价(100坤+)</a>
+				<a href="#" class="director-bottom-select">本店好评商品</a>
+			</div>
+			<div class="goods-summarise">
+				<p>品牌：iKUN农产</p>
+				<ul class="goods-summarise-list">
+				                <li title="ikun 坤制品 1kg/份 鲜美 出口级 香翅捞饭坤 不晚耕坤 清真食品">商品名称：ikun 坤制...</li>
+								<li title="1145141919810">商品编号：1145141919810</li>
+								<li title="中国特产·iKUN农产馆">店铺：<a href="#" target="_blank">中国特产·iKUN农产馆</a></li>
+				                <li title="2.5kg">商品毛重：2.5kg</li>
+				                <li title="中国大陆">商品产地：中国大陆</li>
+								<li title="土鸡">品种：散养土坤</li>
+				                <li title="坤制品">类别：坤制品</li>
+				                <li title="冷冻">贮存条件：冷冻</li>
+				                <li title="散养">饲养方式：散养</li>
+				                <li title="2500g +-250g">总净含量：2500g +-250g</li>
+				</ul>
+			</div>
+			<div class="goods-bigpicture">
+				<img src="img/goods/0.jpg">
+				<img src="img/goods/1.gif">
+				<img src="img/goods/2.jpeg">
+				<img src="img/goods/3.jpeg">
+				<img src="img/goods/4.jpeg">
+				<img src="img/goods/5.jpeg">
+				<img src="img/goods/6.jpeg">
+				<img src="img/goods/7.jpeg"
+				<img src="img/goods/8.jpeg">
+				<img src="img/goods/9.jpeg">
+				<img src="img/goods/10.jpeg">
+				<img src="img/goods/11.jpeg">
+			</div>
+		</div>
+		
+		<script>
+			var thelast=0;
+			function displaygoods(num){
+				document.getElementById("sampleimg").style.display="none";
+				 if(thelast!=0){
+					document.getElementById("goodsimg"+thelast).style.display="none";
+				}
+				document.getElementById("goodsimg"+num).style.display="block";
+				thelast=num;
+			}
+			function last(){
+				document.getElementById("sampleimg").style.display="none";
+				if(thelast!=0){
+					document.getElementById("goodsimg"+thelast).style.display="none";
+				}
+				thelast--;
+				if(thelast<1){
+					thelast=11;
+				}
+				document.getElementById("goodsimg"+thelast).style.display="block";
+				
+			}
+			function next(){
+				document.getElementById("sampleimg").style.display="none";
+				if(thelast!=0){
+					document.getElementById("goodsimg"+thelast).style.display="none";
+				}
+				thelast++;
+				if(thelast>11){
+					thelast=1;
+				}
+				document.getElementById("goodsimg"+thelast).style.display="block";
+				
+			}
+		</script>
+		<a href="main.html" class="back-to-home">返回首页</a>
+	</body>
+</html>
